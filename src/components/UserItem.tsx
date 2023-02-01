@@ -59,4 +59,24 @@ export default function UserItem({ getUser }: { getUser: User }) {
     );
   }
 
+/*2nd way*/
 
+/*
+type UserProp = {
+    item : User;
+}
+
+export default function UserItem(prop : UserProp){
+    return (
+        <div>
+            adress:
+            {Object.entries(prop.item.address).map(([key,value])=>{
+              return (
+                  <ul>
+                      <li>{`${key} : ${value}`}</li>
+                  </ul>
+              )
+            })}
+        </div>
+    )
+}*/
